@@ -1,0 +1,1 @@
+The C++ switch statement executes one statement from multiple conditions. It is like if-else-if ladder statement in C++

@@ -1,0 +1,37 @@
+Functions:
+
+A function is a block of code that performs a specific task. Dividing a complex problem into smaller chunks makes out program easy to understand and reuse.
+
+advantages:
+1. we can aboid rewriting same logic/code again and again in a program.
+2. we can call c++ function easily when it is divided into multiple functions.
+3. we can track a large C++ program easily when it is divided into multiple functions.
+4. Reusability is the main achievement of C functions.
+5. however function calling is always an overhead in a C++ program.
+
+Function aspects:
+there are three aspects of a c++ function.
+
+1. function declaration: A function must be declared globally in a C++ program to tell the compiler about the function name, function parameters,
+and return type.
+
+2. function call: Function can be called from anywhere in the program. The parameter list must not differ in function calling and function declaration.
+we must pass the same number of functions as it is declared in the function declaration.
+
+3. function defination: It contains the actual statements which are to be executed. It is the most important aspect to which the control comes when the function is called.
+Here, we must notice that only one value can be returned from the function.
+
+//function declaration
+return_type function_name(argument list);
+
+//function call
+function_name(argument_list);
+
+//funciton defination
+return_type function_name(argument_list){
+    function body;
+}
+
+Types of function: 
+1. standard library functions
+2. User-defined functions

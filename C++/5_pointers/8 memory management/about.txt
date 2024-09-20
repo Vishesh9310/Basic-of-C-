@@ -1,0 +1,74 @@
+//About:
+    Memory management is a process of managing computer memory,
+    assigning the memory space to the programs to improve the overall system performance.
+
+//Memory Management Operators:
+    In C language, we use the malloc() or calloc() functions to allocate the memory dynamically at run time,
+    and free() function is used to deallocate the dynamically allocated memory. C++ also supports these functions,
+    but C++ also defines unary operators such as new and delete to perform the same tasks, i.e.,
+    allocating and freeing the memory.
+
+
+
+//New Operator:
+    A new operator is used to create the object while a delete operator is used to delete the object.
+    When the object is created by using the new operator, then the object will exist until we explicitly use the delete operator to delete the object.
+    Therefore, we can say that the lifetime of the object is not related to the block structure of the program.
+
+    syntax:
+    pointer_variable=new data-type;
+
+    /*
+    The above syntax is used to create the object using the new operator. In the above syntax,
+    'pointer_variable' is the name of the pointer variable, 'new' is the operator, and 'data-type' defines the type of the data.
+    */
+
+1.  int *p;
+    p=new int;
+
+2.  float *q;
+    q=new float;
+
+1.  int *p=new int;
+2.  int *q=new float;
+
+//Assigning a value to the newly created object:
+two ways of assigning values to the newly created object:
+
+1. *p=45;
+
+2.  pointer_variable = new data-type(value);
+    int *p=new int(45);
+
+//How to create a single dimensional array:
+    As we know that new operator is used to create memory space for any data-type or even user-defined data type such as an array,
+    structures, unions, etc., so the syntax for creating a one-dimensional array is given below:
+
+    pointer_variable = new data-type[size];
+    int *a1 = new int[8];
+
+
+
+//Delete Operator:
+    When memory is no longer required, then it needs to be deallocated so that the memory can be used for another purpose.
+    This can be achieved by using the delete operator, as shown below:
+
+    syntax:
+    delete pointer_variable;
+    
+    example:
+    delete p;
+    delete q;
+
+    //The dynamically allocated array can also be removed from the memory space by using the following syntax:
+    delete [size] pointer_variable;
+
+    //In recent versions of C++, we do not need to mention the size as follows:
+    delete [] pointer_variable;
+
+//Advantages of the new operator:
+
+1. It does not use the sizeof() operator as it automatically computes the size of the data object.
+2. It automatically returns the correct data type pointer, so it does not need to use the typecasting.
+3. Like other operators, the new and delete operator can also be overloaded.
+4. It also allows you to initialize the data object while creating the memory space for the object.

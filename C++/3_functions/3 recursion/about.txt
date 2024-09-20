@@ -1,0 +1,30 @@
+//Defination:
+When a function is called within the same function, it is known as recursion in C++.
+The function which calls the same function is known as a recursive function.
+At its core, recursion is a mesmerizing concept that empowers a function to solve problems by breaking them down into smaller instances of the same problem.
+It is like breaking a puzzle down into smaller bits until you get to the simplest element that can be solved immediately.
+
+//Direct vs Indirect recursion:
+
+Direct recursion:
+In this method, a function calls itself directly within its own body.
+It's a straightforward form of recursion, where a function unapologetically invokes itself.
+
+Indirect recursion:
+It is occurs when two or more functions or routines take turns calling each other in a loop.
+They keep passing control back and forth, like a game of tag
+
+//Advantages of Recursion in C++:
+Elegance: Recursion often leads to elegant and concise code, especially for problems with inherent recursive structures.
+Simplicity: It simplifies complex problems by breaking them down into smaller, more manageable subproblems.
+Versatility: Recursive algorithms can be versatile and applied to a wide range of problems.
+
+//Disadvantages of Recursion in C++:
+Memory Overhead: Recursion consumes more memory due to the call stack, potentially leading to stack overflow errors for deep recursions.
+Performance: Recursive solutions can be less efficient than iterative ones, as each function call incurs overhead.
+Debugging Complexity: Debugging recursive functions can be challenging due to the intricate call stack and multiple function instances.
+
+//Nested recursion:
+It involves a function that calls itself with the result of a previous recursive call.
+It can lead to complex behavior as each recursive call generates multiple new calls.
+Proper handling of base cases is crucial in nested recursion to prevent infinite loops and ensure correct results.

@@ -1,0 +1,19 @@
+In c++ comments are two types:
+1. Single line comments: It is used where we need to comment single line. single line comments start with double slash // .
+
+2. Multiline comments: It is used where we need to comment more than one line. It is surrounded by slash and aestrisks /**/ .
+example: 
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    //this is a single line comment
+
+    /*
+    this is a 
+    multi line comment
+    */
+    
+    return 0;
+}

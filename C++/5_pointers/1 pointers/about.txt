@@ -1,0 +1,68 @@
+Defination: The pointer in C++ language is a variable, it is also known as locator or indicator that points to an address of a value.
+
+example:
+datatype *var_name;   
+int *ptr; //ptr can point to an address that hold int data.
+
+//How to use a pointer?
+1. Establish a pointer variable.
+2. employing the unary operator (&), which yields the address of the variable, to assign a pointer to a variable's address.
+3. Using the unary operator (*), which gives the variable's value at the address provided by its argument, one can access the value stored in an address.
+
+//uses of pointer:
+1. Dynamic memory allocation.
+2. Arrays, Funcitons and Structures.
+
+//Declaring a poiner:
+int * a; //pointer to int
+char *c; //pointer to char
+
+//What are Pointer and string literals?
+String literals are arrays of character sequences with null ends.
+The elements of a string literal are arrays of type const char (because characters in a string cannot be modified) plus a terminating null-character.
+
+//What is a void pointer?
+This unique type of pointer, which is available in C++, stands in for the lack of a kind.
+Pointers that point to a value that has no type are known as void pointers (and thus also an undetermined length and undetermined dereferencing properties).
+This indicates that void pointers are very flexible because they can point to any data type.
+This flexibility has benefits.
+Direct dereference is not possible with these pointers.
+Before they may be dereferenced, they must be converted into another pointer type that points to a specific data type.
+
+//what is invalid pointer:
+A pointer must point to a valid address, not necessarily to useful items (like for arrays).
+We refer to these as incorrect pointers.
+Additionally, incorrect pointers are uninitialized pointers.
+
+int *ptr1;
+int arr[10];
+int *ptr2 = arr+20;
+
+Here, ptr1 is not initialized, making it invalid, and ptr2 is outside of the bounds of arr, making it likewise weak.
+(Take note that not all build failures are caused by faulty references.).
+
+//what is a null pointer:
+A null pointer is not merely an incorrect address;
+it also points nowhere. Here are two ways to mark a pointer as NULL:
+
+int *ptr1=0;
+int *ptr2=NULL;
+
+//What is a pointer to a pointer:
+In C++, we have the ability to build a pointer to another pointer, which might then point to data or another pointer.
+The unary operator (*) is all that is needed in the syntax for declaring the pointer for each level of indirection.
+
+char a;
+char *b;
+char **c;
+
+a='g';
+b=&a;
+c=&b;
+
+Here b points to a char that stores 'g', and c points to the pointer b.
+
+//what are references and pointers:
+1. Call-By-Value
+2. Call-By-Reference with a Pointer Argument
+3. Call-By-Reference with a Reference Argument

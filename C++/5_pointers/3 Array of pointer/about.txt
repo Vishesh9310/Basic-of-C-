@@ -1,0 +1,40 @@
+//About:
+    Array and pointers are closely related to each other.
+    In C++, the name of an array is considered as a pointer, i.e., the name of an array contains the address of an element.
+    C++ considers the array name as the address of the first element.
+    For example, if we create an array, i.e.,
+    marks which hold the 20 values of integer type, then marks will contain the address of first element, i.e., marks[0].
+    Therefore, we can say that array name (marks) is a pointer which is holding the address of the first element of an array.
+
+//Array of Pointers:
+    An array of pointers is an array that consists of variables of pointer type,
+    which means that the variable is a pointer addressing to some other element.
+    Suppose we create an array of pointer holding 5 integer pointers;
+    then its declaration would look like:
+    
+    int *ptr[5]; //array of 5 integer pointer.
+    
+    In the above declaration, we declare an array of pointer named as ptr,
+    and it allocates 5 integer pointers in memory.
+
+    The element of an array of a pointer can also be initialized by assigning the address of some other element.
+    Let's observe this case through an example.
+
+int a; // variable declaration.  
+ptr[2] = &a;
+
+In the above code, we are assigning the address of 'a' variable to the third element of an array 'ptr'.
+We can also retrieve the value of 'a' be dereferencing the pointer.
+
+*ptr[2];
+
+//Array of Pointer to Strings:
+An array of pointer to strings is an array of character pointers that holds the address of the first character of a string or we can say the base address of a string.
+
+
+//The following are the differences between an array of pointers to string and two-dimensional array of characters:
+1. An array of pointers to string is more efficient than the two-dimensional array of characters in case of memory consumption because an array of pointer to strings
+consumes less memory than the two-dimensional array of characters to store the strings.
+
+2. In an array of pointers, the manipulation of strings is comparatively easier than in the case of 2d array.
+We can also easily change the position of the strings by using the pointers. 

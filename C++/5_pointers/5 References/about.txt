@@ -1,0 +1,29 @@
+//about:
+Till now, we have read that C++ supports two types of variables:
+1. An ordinary variable is a variable that contains the value of some type.
+For example, we create a variable of type int, which means that the variable can hold the value of type integer.
+2. A pointer is a variable that stores the address of another variable.
+It can be dereferenced to retrieve the value to which this pointer points to.
+3. There is another variable that C++ supports, i.e., references.
+It is a variable that behaves as an alias for another variable.
+
+//How to create a Reference:
+Reference can be created by simply using an ampersand (&) operator.
+When we create a variable, then it occupies some memory location.
+We can create a reference of the variable; therefore,
+we can access the original variable by using either name of the variable or reference. For example,
+
+int a=10;
+int &ref=a;
+
+//C++ provides two types of references:
+1. References to non-const values.
+2. References as aliases.
+
+//Properties of References:
+1. Initialization: It must be initialized at the time of the declaration.
+2. Reassignment: It cannot be reassigned means that the reference variable cannot be modifies.(output:compile-time error).
+3. Function parameters: References can also be passed as a function parameter.
+    It does not create a copy of the argument and behaves as an alias for a parameter.
+    It enhances the performance as it does not create a copy of the argument.
+4. References as shortcuts: With the help of references, we can easily access the nested data.

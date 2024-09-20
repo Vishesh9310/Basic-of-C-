@@ -1,0 +1,20 @@
+//Defination:
+    The sizeof() is an operator that evaluates the size of data type, constants, variable.
+    It is a compile-time operator as it returns the size of any variable or a constant at the compilation time.
+    The size, which is calculated by the sizeof() operator, is the amount of RAM occupied in the computer.
+
+syntax of the sizeof() operator is given below:
+
+sizeof(data_type);
+
+//The sizeof() operator can be applied to the following operand types:
+
+1. when an operand is of data type.
+2. when an operand is of Class type.
+    a.  If we add one more integer variable in a class.
+        then the code return 8 bytes output.
+    b.  If we add a char variable in the above code.
+        then the code return 12 byter output (int+int+char)=4+4+1 and pulus structure padding.
+3. when a operand is of array type.
+4. when an operand is of pointer type.
+5. when an operand is an expression.

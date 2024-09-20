@@ -1,0 +1,49 @@
+//Defination:
+    A void pointer is a general-purpose pointer that can hold the address of any data type, but it is not associated with any data type.
+
+//syntax:
+    void *ptr;
+
+
+//this statement throws an error.
+int *ptr;
+float a=10.2;
+ptr=&a;
+
+//this statement not throws an error.
+void *ptr;
+float a=10.2;
+ptr=&a;
+
+//Difference between void pointer in C and C++
+In C, we can assign the void pointer to any other pointer type without any typecasting, whereas in C++,
+we need to typecast when we assign the void pointer type to any other pointer type.
+
+In C:
+#include <stdio.h>  
+int main()  
+{  
+   void *ptr; // void pointer declaration  
+   int *ptr1;  // integer pointer declaration  
+   int a =90;  // integer variable initialization  
+   ptr=&a; // storing the address of 'a' in ptr  
+   ptr1=ptr; // assigning void pointer to integer pointer type.  
+   printf("The value of *ptr1 : %d",*ptr1);  
+   return 0;  
+}  
+
+In C++:
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+  void *ptr; // void pointer declaration  
+  int *ptr1; // integer pointer declaration  
+  int data=10; // integer variable initialization  
+  ptr=&data;  // storing the address of data variable in void pointer variable  
+  ptr1=(int *)ptr; // assigning void pointer to integer pointer  
+  std::cout << "The value of *ptr1 is : " <<*ptr1<< std::endl;  
+  return 0;  
+}  
+
+//NOTE:cast operator: (int*),(char*).

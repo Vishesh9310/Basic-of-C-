@@ -1,0 +1,7 @@
+In C++ programming, if statement is used to test the condition. There are various types of if statements in C++.
+
+1. if statements: The C++ if statement tests the condition. It is executed if condition is true.
+2. if else statements:The C++ if-else statement also tests the condition. 
+   It executes if block if condition is true otherwise else block is executed.
+3. if else ladder:The C++ if-else-if ladder statement executes one condition from multiple statements.
+4. nested if else:

@@ -1,0 +1,16 @@
+//Referemce vs Pointer:
+C++ reference and pointer seem to be similar, but there are some differences that exist between them.
+A reference is a variable which is another name of the existing variable,
+while the pointer is variable that stores the address of another variable.
+
+Differences between references and pointer:
+1. Definition.
+2. Declaration: &(reference),*(pointer).
+3. Reassignment: (reference cannot reassign)(pointer can be reassign).
+4. Memory Address:
+    (In the case of reference, both the reference and actual variable refer to the same address.
+    The new variable will not be assigned to the reference variable until the actual variable is either deleted or goes out of the scope.)
+    (In the case of pointers, both the pointer variable and the actual variable will have different memory addresses).
+5. NULL value: (cannot assign in reference),(pointer can be assigned).
+6. Indirection: (cannot be in references),(pointers can have pointer to pointer offering more than one level of indirection).
+7. Arithmetic Operations: (compile time error),(can be applied to pointers names as "Pointer Arithmetic").

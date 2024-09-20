@@ -1,0 +1,30 @@
+//Malloc() vs new in C++:
+    Both the malloc() and new in C++ are used for the same purpose. They are used for allocating memory at the runtime.
+    But, malloc() and new have different syntax. The main difference between the malloc() and new is that
+    the new is an operator while malloc() is a standard library function that is predefined in a stdlib header file.
+
+//What is new?
+    The new is a memory allocation operator, which is used to allocate the memory at the runtime. The memory initialized
+    by the new operator is allocated in a heap. It returns the starting address of the memory, which gets assigned to the variable.
+    The functionality of the new operator in C++ is similar to the malloc() function, which was used in the C programming language.
+    C++ is compatible with the malloc() function also, but the new operator is mostly used because of its advantages.
+
+    syntax:
+    type variable = new type(parameter_list);
+
+    1. type: It defines the datatype of the variable for which the memory is allocated by the new operator.
+    2. variable: It is the name of the variable that points to the memory.
+    3. parameter_list: It is the list of values that are initialized to a variable.
+
+//What is malloc()?
+    A malloc() is a function that allocates memory at the runtime. This function returns the void pointer,
+    which means that it can be assigned to any pointer type.
+    This void pointer can be further typecast to get the pointer that points to the memory of a specified type.
+
+    syntax:
+    type variable_name = (type*)malloc(sizeof(type));
+
+    1. type: it is the datatype of the variable for which the memory has to be allocated.
+    2. variable_name: It defines the name of the variable that points to the memory.
+    3. (type*): It is used for typecasting so that we can get the pointer of a specified type that points to the memory.
+    4. sizeof(): The sizeof() operator is used in the malloc() function to obtain the memory size required for the allocation.

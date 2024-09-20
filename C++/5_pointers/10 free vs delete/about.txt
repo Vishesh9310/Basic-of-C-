@@ -1,0 +1,45 @@
+//free() function:
+    The free() function is used in C++ to de-allocate the memory dynamically. It is basically a library function used in C++,
+    and it is defined in stdlib.h header file. This library function is used when the pointers either pointing to the memory
+    allocated using malloc() function or Null pointer.
+
+    syntax:
+    free(ptr);
+
+//free() parameter:
+    In the above syntax, ptr is a parameter inside the free() function. The ptr is a pointer pointing to the memory
+    block allocated using malloc(), calloc() or realloc function. This pointer can also be null or a pointer allocated
+    using malloc but not pointing to any other memory block.
+
+1. If the pointer is null, then the free() function will not do anything.
+2. If the pointer is allocated using malloc, calloc, or realloc, but not pointing to any memory block then this function will cause undefined behavior.
+
+//free() Return value:
+    The free() function does not return any value. Its main function is to free the memory.
+
+//Delete Operator:
+    It is an operator used in C++ programming language, and it is used to de-allocate the memory dynamically.
+    This operator is mainly used either for those pointers which are allocated using a new operator or NULL pointer.
+
+    syntax:
+    delete pointer_name;
+
+    example:
+    delete p; //To delete the pointer.
+    delete [] p; //To delete the array.
+
+//Some important points related to delete operator are:
+1.  It is either used to delete the array or non-array objects which are allocated by using the new keyword.
+2.  To delete the array or non-array object, we use delete[] and delete operator, respectively.
+3.  The new keyword allocated the memory in a heap; therefore, we can say that the delete operator always de-allocates the memory from the heap
+4.  It does not destroy the pointer, but the value or the memory block, which is pointed by the pointer is destroyed.
+
+//Differences between delete and free():
+The following are the differences between delete and free() in C++ are:
+
+1.  The delete is an operator that de-allocates the memory dynamically while the free() is a function that destroys the memory at the runtime.
+2.  The delete operator is used to delete the pointer, which is either allocated using new operator or a NULL pointer,
+    whereas the free() function is used to delete the pointer that is either allocated using malloc(), calloc() or realloc() function or NULL pointer.
+3.  When the delete operator destroys the allocated memory, then it calls the destructor of the class in C++,
+    whereas the free() function does not call the destructor; it only frees the memory from the heap.
+4.  The delete() operator is faster than the free() function.
