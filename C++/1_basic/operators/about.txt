@@ -1,0 +1,14 @@
+An operator is a symbol that operates on a value to perform specific mathematical or logical computations. They form the foundation of any programming language. In C++, we have built-in operators to provide the required functionality.
+
+An operator operates the operands. For example, 
+
+int c = a + b;
+Here, ‘+’ is the addition operator. ‘a’ and ‘b’ are the operands that are being ‘added’.
+
+Operators in C++ can be classified into 6 types:
+1. Arithmetic Operators:Unary(pre(++a,--a),post(a++,a--)),Binary(+,-,*,/,%)
+2. Relational Operators:(==,!=,>)
+3. Logical Operators:(&&,||,!)
+4. Bitwise Operators:(&,|,^,~,<<,>>)
+5. Assignment Operators:(=,+=,-=,*=,/=,%=)
+6. Ternary or Conditional Operators: Expression1 ? Expression2 : Expression13

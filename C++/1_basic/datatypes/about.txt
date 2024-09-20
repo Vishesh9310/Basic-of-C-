@@ -1,0 +1,9 @@
+A data type specifies the type of data that a variable can store such as integer, floating, character etc.
+Data types specifies the size and type of information the variable will store:
+
+Sr.No  Data types        size            Description:
+1.     boolean           1 byte          Stores true or false values.
+2.     Char              1 byte          Stores a single character/letter/number, or ASCII values.
+3.     Int               2 or 4 bytes    Stores whole numbers, without decimals.
+4.     float             4 bytes         fractional number, containing one or more decimals. sufficient for storing 6-7 decimal digits.
+5.     double            8 bytes         Stores fractoinal numbers, containing one or more decimals. sufficient for storing 15 decimal digits.

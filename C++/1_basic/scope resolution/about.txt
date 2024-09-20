@@ -1,1 +1,9 @@
-Scope resolution(::) :
+//Scope resolution(::)
+    The Scope resolution operator is used to reference the global variable or member function that is out of Scope.
+    the operator is represented as the double colon(::) symbol.
+
+Uses of the scope resolution operator:
+    It is used to access the hidden variables or member functions of a program.
+    It defines the member function outside of the class usinf the scope resolution.
+    It is used to access the static variable and static function of a class.
+    The scope resolution operator is used to override function in the Inheritance.

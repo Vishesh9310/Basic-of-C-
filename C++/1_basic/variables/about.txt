@@ -1,0 +1,35 @@
+//Variable:
+    A variable is a name of memory location. It is used to store data. Its value can be changed and it can be reused many times.
+
+syntax:
+    type variable_list;   
+
+example:
+    int x;
+    float y;
+    char z;
+
+//rules for defining variables:
+    A variable can have alphabets, digits and underscore.
+    A variable name can start with alphabet and underscore only. It can't start with digit.
+    No white space is allowed within variable name.
+    A variable name must not be any reserved word or keyword e.g. char, float etc.
+    //Valid variable names:
+    int a;
+    int _ab;
+    int a30;
+    //invalid variable names:
+    int 4;
+    int x y;
+    int double;
+
+//Conclusion:
+
+Conclusion:
+C++ variables resound as the virtuoso musicians in the grand symphony of programming,
+harmonizing data and logic to create complex software masterpieces.
+Their function enhances the ability of the language to orchestrate a broad range of applications as memory containers,
+adaptable manipulators, and conduits of interactivity.
+The composer's standards for their construction and use aim to ensure the codebase's clarity, cohesiveness, and elegance. As our investigation ends,
+it becomes clear that C++ variables are not just ordinary objects but rather the core foundation of data-driven innovation.
+Variables give algorithms life with every line of code they write, allowing them to turn abstract concepts into useful and significant realities.
